@@ -1,0 +1,60 @@
+CSIF-Tool
+---------
+by Joe Ferrucci (http://joeferrucci.info)
+-----------------------------------------
+University of California, Davis
+Computer Science
+
+
+General
+-------
+- What this tool does is allow you to access the CSIF computers without having to type in the long SSH command, including the pc##. 
+- Once you have this tool setup you just type `csif 44` and it will connect to machine # 44 in CSIF.
+
+
+Security
+--------
+This program is as secure as the machine itself. This tool does not record, store, trasmit or otherwise tamper with your password. It's pretty simple. 
+
+
+To access help screen
+---------------------
+
+$ csif -h
+
+$ csif -help
+
+
+
+To install
+----------
+Once you have the "csif" executable on your machine, open the terminal (command prompt) and navigate your way to the file.
+Then type the following (not including the $ of course):
+
+$ sudo mv ./csif /usr/bin
+
+Your system will prompt you for the password.
+
+Now it's installed! 
+
+
+
+To change your username
+-----------------------
+
+$ csif -c
+
+$ csif -config
+
+
+
+To connect to CSIF over SSH
+---------------------------
+$ csif <machine-id>
+
+such that 
+
+<machine-id> ::= <number>
+<number> ::= { <digit> }
+<digit> ::= 1-60
+
